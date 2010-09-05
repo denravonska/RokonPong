@@ -15,7 +15,7 @@ public class MainActivity extends RokonActivity {
     	debugMode();
     	forceFullscreen();
     	forceLandscape();
-    	
+    	    	
     	Display display = getWindowManager().getDefaultDisplay();
     	screenWidth = display.getWidth();
     	screenHeight = display.getHeight();
