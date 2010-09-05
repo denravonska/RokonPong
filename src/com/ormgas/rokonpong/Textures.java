@@ -6,14 +6,19 @@ import com.stickycoding.rokon.TextureAtlas;
 public class Textures {
 
 	public static TextureAtlas atlas;
-	public static Texture mBackground;
+	public static Texture background;
 	public static Texture peach;
 	public static Texture mario;
 	public static Texture bowser;
+	public static Texture smallcloud;
+	public static Texture bigcloud;
 	
 	public static void load()
 	{
 		atlas = new TextureAtlas();
+		
+		background = new Texture("background.png");
+		atlas.insert(background);
 		
 		peach = new Texture("peach.png");
 		atlas.insert(peach);
@@ -23,6 +28,12 @@ public class Textures {
 		
 		bowser = new Texture("bowser.png");
 		atlas.insert(bowser);
+		
+		smallcloud = new Texture("smallcloud.png");
+		atlas.insert(smallcloud);
+		
+		bigcloud = new Texture("bigcloud.png");
+		atlas.insert(bigcloud);
 		
 		atlas.complete();
 	}
