@@ -29,11 +29,11 @@ public class Textures {
 		bowser = new Texture("bowser.png");
 		atlas.insert(bowser);
 		
-		smallcloud = new Texture("smallcloud.png");
-		atlas.insert(smallcloud);
-		
 		bigcloud = new Texture("bigcloud.png");
 		atlas.insert(bigcloud);
+
+		smallcloud = new Texture("smallcloud.png");
+		atlas.insert(smallcloud);
 		
 		atlas.complete();
 	}
